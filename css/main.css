@@ -1,0 +1,131 @@
+#main2{
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 8px solid white;
+    border-radius: 30px;
+    background-color: coral;
+    padding-left: 10px;
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: auto;
+}
+#div1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 560px;
+    overflow: auto;
+    
+}
+#div2{
+    width: 600px;
+}
+#div1, #div2{
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 8px solid white;
+    border-radius: 30px;
+    background-color: coral;
+}
+#knopki{
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#butRedag{
+    width: 100px;
+    height: 35px;
+    margin: 0 auto;
+    float: left;
+    border-radius: 15px;
+    background-color: black;
+    color: aliceblue;
+}
+#butStul{
+    margin-left: 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: black;
+    color: aliceblue;
+    float: left;
+}#pass{
+    margin-left: 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: black;
+    color: aliceblue;
+}
+#area1{
+    border-radius: 20px;
+    margin: 10px auto;
+    display: block;
+}
+#ar1but1{
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+#ar1but2{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+#stul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#Color{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.ColorChange{
+    width: 100px;
+    height: 65px;
+    float: left;
+    margin: 0 auto;
+    outline: 3px solid gray;
+}
+#parent_popup {
+  background: #000;
+  height: 100%;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+    display: none;
+}
+#popup {
+  background-color: #ffffff;
+  height: 200px;
+  position: fixed;
+  top: 100px;
+  left: 40%;
+  color: #f00;
+  width: 300px;
+  border: 6px solid black;
+}
+#passWord{
+    margin: 18px auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#passOk{
+    margin: 0 auto;
+    display: block;
+    border-radius: 15px;
+    background-color: black;
+    color: aliceblue;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        
+    </style>
+</head>
+<body> 
+  <div id="main2" style="display: none">
+      <h2 style="text-align: center;">Виберіть, що саме ви хочете додати:</h2><br>
+            <form action="">
+                <input type="radio" name="tableSp" id="tbl">
+                <span>Таблицю</span>
+                <input type="radio" name="tableSp" id="sps">
+                <span>Список</span><br>
+                
+            </form><br>
+      <div id="table" style="display: none;">
+          <span>Введіть кількість рядків таблиці:</span>
+          <input class="check" type="text" id="tablRad" style="width: 40px;height:13px; border-radius: 10px; text-align: center">
+              <div id="qTable" class="omg" style="color: red; display: none;float: right;">введіть правильно!</div><br>
+          <span>Введіть кількість стовпців таблиці:</span>
+              <div id="qTable" class="omg" style="color: red; display: none;float: right;">введіть правильно!</div>
+          <input class="check" type="text" id="tablStov" style="width: 40px;height:13px; border-radius: 10px; text-align: center">
+              <div id="qTable" class="omg" style="color: red; display: none;float: right;">введіть правильно!</div><br><br><br>
+          <h3>Стилізуйте таблицю:</h3>
+          <span>Введіть ширину комірки таблиці:</span>
+          <input class="check" type="text" id="tablWidth" style="width: 40px;height:13px; border-radius: 10px; text-align: center">
+              <div id="qTable" class="omg" style="color: red; display: none;float: right;">введіть правильно!</div><br>
+          <span>Введіть висоту комірки таблиці:</span>
+          <input class="check" type="text" id="tablHeight" style="width: 40px;height:13px; border-radius: 10px; text-align: center">
+              <div id="qTable" class="omg" style="color: red; display: none;float: right;">введіть правильно!</div><br><br>
+          <span>Товщина:</span>
+          <input class="check" type="text" id="tablWeight" style="width: 40px;height:13px; border-radius: 10px; text-align: center">
+              <div id="qTable" class="omg" style="color: red; display: none;float: right;">введіть правильно!</div>
+          <br><br><span>Тип лінії:</span>
+        <select name="" id="typeLine" style="width: 60px; height: 23px ;border-radius: 10px; background-color:lightblue;">
+                <option value="solid" >solid</option>
+                <option value="dotted" >dotted</option>
+                <option value="dashed">dashed</option>
+                <option value="double">double</option>
+        </select>
+            <span>Колір лінії:</span>
+          <select name="" id="colorLine" style="width: 60px; height: 23px ;border-radius: 10px; background-color:lightblue;">
+                <option value="black" >black</option>
+                <option value="blue" >blue</option>
+                <option value="red">red</option>
+                <option value="yellow">yellow</option>
+        </select><br><br>
+         <input id="doTable" type="button" value="Створити таблицю" style="border-radius: 10px">
+      </div>
+      <div id="list" style="display: none;">
+         <input type="radio" name="spiska" id="numb">
+                <span>Нумерований</span>
+                <input type="radio" name="spiska" id="mark">
+                <span>Маркований</span><br><br>
+          <span>Введіть кількість елементів у списку:</span>
+          <input type="text" class="lustok" id="skikList" style="width: 40px;height:13px; border-radius: 10px; text-align: center"><div id="q1" style="color: red; display: none;float: right;">введіть правильно!</div><br><br>
+          <span>Тип маркування списку:</span>
+          <select name="" id="markList" style="width: 60px; height: 23px ;border-radius: 10px; background-color:lightblue;">
+                <option value="" >circle</option>
+                <option value="" >disc</option>
+                <option value="">square</option>
+        </select><select name="" id="markList1" style="width: 60px; height: 23px ;border-radius: 10px; background-color:lightblue;display: none">
+                <option value="">1</option>
+                <option value="">a</option>
+                <option value="">I</option>
+        </select><br><br>
+        
+         <input type="button" id="doList" value="Створити список" style="border-radius: 10px">
+      </div>
+  </div>
+   <main id="main" style="display: block">
+    <div id="div1">
+        <p>Якийсь текст де шось там пише</p>
+        <p>Якийсь текст де шось там пише</p>
+        <p>Якийсь текст де шось там пише</p>
+        <p>Якийсь текст де шось там пише</p>
+        <p>Якийсь текст де шось там пише</p>
+    </div>
+        <div id="knopki">
+        <input id="butRedag" type="button" value="Редагувати">
+        <input id="butStul" type="button" value="Стилізувати">
+        <input id="pass" type="button" value="Блокувати">
+        </div>
+    <div id="div2">
+       <div id="redag">
+            <textarea id="area1" cols="80" rows="15"></textarea>
+            <input id="ar1but1" type="button" value="Зберегти">
+            <input id="ar1but2" type="button" value="Додати">
+        </div>
+        <div id="stul" style="display: none">
+            <span>Розмір тексту:</span>
+            <form action="">
+            <input type="radio" name="TextSize" class="rad" value="12">
+            <span>12pt</span>
+            <input type="radio" name="TextSize" class="rad" value="14">
+            <span>14pt</span>
+            <input type="radio" name="TextSize" class="rad" value="16">
+            <span>16pt</span>
+            <input type="radio" name="TextSize" class="rad" value="18">
+            <span>18pt</span>
+            <input type="radio" name="TextSize" class="rad" value="20">
+            <span>20pt</span> </form><br><br>
+            <span>Стиль тексту:</span>
+            <select name="" id="TextStyle" style="width: 140px; height: 25px ;border-radius: 10px; background-color:lightblue;">
+                <option value="" style="font-Family: Times New Roman">Times New Roman</option>
+                <option value="fantasy" style="font-Family: fantasy">fantasy</option>
+                <option value="" style="font-Family: Arial">Arial</option>
+            </select><br><br>
+            <input type="button" id="textColor" value="Колір тексту" style="border-radius: 10px">
+            <input type="button" id="bgColor" value="Колір фону" style="border-radius: 10px">
+            <br><br>
+            <input type="checkbox" id="TextBold">
+            <span>Жирний текст</span>
+            <input type="checkbox" id="TextCursive">
+            <span>Курсивний текст</span>
+            <div id="Color" style="display: none">
+                <div class="ColorChange" style="background-color: red"></div>
+                <div class="ColorChange" style="background-color: blue"></div>
+                <div class="ColorChange" style="background-color: black;"></div>
+                <div class="ColorChange" style="background-color: green; clear: both"></div>
+                <div class="ColorChange" style="background-color: yellow"></div>
+                <div class="ColorChange" style="background-color: violet"></div>
+                <div class="ColorChange" style="background-color: darkblue;  clear: both;"></div>
+                <div class="ColorChange" style="background-color: brown"></div>
+                <div class="ColorChange" style="background-color: pink"></div>
+          </div> 
+        </div>
+    </div>
+    </main>
+    <div id="parent_popup">
+      <div id="popup">
+    <input type="password" id='passWord'><br>
+    <input type="button" value="жми" id='passOk'>
+  </div>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
